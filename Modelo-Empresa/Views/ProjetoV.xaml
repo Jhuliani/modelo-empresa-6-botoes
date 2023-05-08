@@ -1,0 +1,21 @@
+﻿<Window x:Class="Modelo_Empresa.Views.ProjetoV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modelo_Empresa.Views"
+        mc:Ignorable="d"
+        Title="ProjetoV" Height="250" Width="800">
+    <Grid>
+        <Button Content="Salvar" HorizontalAlignment="Left" Margin="657,154,0,0" VerticalAlignment="Top" Height="31" Width="86" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="105,50,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="380"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="57,42,0,0" VerticalAlignment="Top"/>
+        <Label Content="Data início" HorizontalAlignment="Left" Margin="505,42,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="608,50,0,0" TextWrapping="Wrap" Text="{Binding DataInicio}" VerticalAlignment="Top" Width="135"/>
+        <Label Content="Data fim" HorizontalAlignment="Left" Margin="57,90,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="129,94,0,0" TextWrapping="Wrap" Text="{Binding DataFim}" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Observação1" HorizontalAlignment="Left" Margin="295,90,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="400,94,0,0" TextWrapping="Wrap" Text="{Binding Observacao}" VerticalAlignment="Top" Width="343"/>
+
+    </Grid>
+</Window>

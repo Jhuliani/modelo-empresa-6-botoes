@@ -1,0 +1,46 @@
+﻿<Window x:Class="Modelo_Empresa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modelo_Empresa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1000">
+
+    <Grid>
+
+        <ListView ItemsSource="{Binding listaFuncionarios}" SelectedValue="{Binding FuncionarioSelecionado}" Margin="21,47,528,160">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nome Funcionario" DisplayMemberBinding="{Binding Nome}"/>
+                    <GridViewColumn Header="CPF" DisplayMemberBinding="{Binding Cpf}"/>
+                    <GridViewColumn Header="Salario" DisplayMemberBinding="{Binding Salario}"/>
+                    <GridViewColumn Header="Departamento" DisplayMemberBinding="{Binding Departamento}"/>
+                    <GridViewColumn Header="Projeto 1" DisplayMemberBinding="{Binding Projeto1}"/>
+                    <GridViewColumn Header="Projeto 2" DisplayMemberBinding="{Binding Projeto2}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView ItemsSource="{Binding listaProjetos}" SelectedValue="{Binding ProjetoSelecionado}" Margin="519,47,27,160">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nome Projeto" DisplayMemberBinding="{Binding Nome}"/>
+                    <GridViewColumn Header="Data início" DisplayMemberBinding="{Binding DataInicio}"/>
+                    <GridViewColumn Header="Data fim" DisplayMemberBinding="{Binding DataFim}"/>
+                    <GridViewColumn Header="Observação" DisplayMemberBinding="{Binding Observacao}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Adicionar" Command="{Binding AdicionarFuncionario}" HorizontalAlignment="Left" Margin="52,381,0,0" VerticalAlignment="Top" Height="31" Width="86"/>
+        <Button Content="Editar" Command="{Binding AtualizarFuncionario}" HorizontalAlignment="Left" Margin="197,381,0,0" VerticalAlignment="Top" Height="31" Width="86"/>
+        <Button Content="Remover" Command="{Binding RemoverFuncionario}" HorizontalAlignment="Left" Margin="342,381,0,0" VerticalAlignment="Top" Height="31" Width="86"/>
+
+        <Button Content="Adicionar" Command="{Binding AdicionarProjeto}" HorizontalAlignment="Left" Margin="561,381,0,0" VerticalAlignment="Top" Height="31" Width="86"/>
+        <Button Content="Editar" Command="{Binding AtualizarProjeto}" HorizontalAlignment="Left" Margin="703,381,0,0" VerticalAlignment="Top" Height="31" Width="86"/>
+        <Button Content="Remover" Command="{Binding RemoverProjeto}" HorizontalAlignment="Left" Margin="843,381,0,0" VerticalAlignment="Top" Height="31" Width="86"/>
+
+
+
+    </Grid>
+</Window>

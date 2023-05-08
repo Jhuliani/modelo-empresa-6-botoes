@@ -1,0 +1,25 @@
+﻿<Window x:Class="Modelo_Empresa.Views.FuncionarioV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modelo_Empresa.Views"
+        mc:Ignorable="d"
+        Title="FuncionarioV" Height="350" Width="800">
+    <Grid>
+        <Button Content="Salvar"  HorizontalAlignment="Left" Margin="657,220,0,0" VerticalAlignment="Top" Height="31" Width="86" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="116,79,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="284"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="57,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Salario" HorizontalAlignment="Left" Margin="592,75,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="663,79,0,0" TextWrapping="Wrap" Text="{Binding Salario}" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Departamento" HorizontalAlignment="Left" Margin="46,146,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="151,150,0,0" TextWrapping="Wrap" Text="{Binding Departamento}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Projeto1" HorizontalAlignment="Left" Margin="291,146,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="357,150,0,0" TextWrapping="Wrap" Text="{Binding Projeto1}" VerticalAlignment="Top" Width="139"/>
+        <TextBox HorizontalAlignment="Left" Margin="584,150,0,0" TextWrapping="Wrap" Text="{Binding Projeto2}" VerticalAlignment="Top" Width="159"/>
+        <Label Content="Projeto2" HorizontalAlignment="Left" Margin="519,146,0,0" VerticalAlignment="Top"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="426,75,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="474,79,0,0" TextWrapping="Wrap" Text="{Binding Cpf}" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window> 
